@@ -4,70 +4,62 @@ import com.helovei.donorApi.model.RoleEntity;
 import com.helovei.donorApi.model.UserEntity;
 import com.helovei.donorApi.repository.RoleRepository;
 import com.helovei.donorApi.repository.UserRepository;
+import com.helovei.donorApi.service.RoleService;
 import com.helovei.donorApi.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.userdetails.UserDetails;
+import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.security.core.userdetails.UsernameNotFoundException;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
-
-import java.util.Collections;
+import java.util.List;
 
 @Service
 public class UserServiceImpl implements UserService {
 
-    @Autowired
-    UserRepository userRepository;
+    private final UserRepository userRepository;
+    private final RoleService roleRepository;
+    private final PasswordEncoder encoder;
+
+    private String secureWord;
 
     @Autowired
-    RoleRepository roleRepository;
-
-    @Autowired
-    PasswordEncoder passwordEncoder;
-
-    @Override
-    public UserEntity loadUserByUsername(String s) throws UsernameNotFoundException {
-        UserEntity user = userRepository.findUserByUsername(s);
-        if (user == null) {
-            throw new UsernameNotFoundException("User not found");
-        } else return user;
+    public UserServiceImpl(UserRepository userRepository, RoleService roleRepository, PasswordEncoder encoder) {
+        this.userRepository = userRepository;
+        this.roleRepository = roleRepository;
+        this.encoder = encoder;
     }
 
     @Override
-    public Iterable<UserEntity> getAll() {
+    public void save(UserEntity entity) {
+        RoleEntity userRole = roleRepository.findByName("ROLE_USER");
+        entity.setRole(userRole);
+        entity.setPassword(encoder.encode(entity.getPassword()));
+        userRepository.save(entity);
+    }
+
+    @Override
+    public List<UserEntity> getAll() {
         return userRepository.findAll();
     }
 
-    public UserEntity findUserById(Long id) {
-        return userRepository.findById(id).get();
+    @Override
+    public void delete(UserEntity entity) {
+        userRepository.delete(entity);
     }
 
-    @Override
-    public boolean save(UserEntity user) {
-        UserEntity foundUser = userRepository.findUserByUsername(user.getUsername());
-        if (foundUser != null) {
-            return false;
-        } else {
-            RoleEntity userRole = roleRepository.findRoleEntityByName("ROLE_USER");
-            user.setRoles(Collections.singleton(userRole));
-            user.setPassword(passwordEncoder.encode(user.getPassword()));
-            userRepository.save(user);
+    public UserEntity findByLoginAndPassword(String username, String password) {
+        UserEntity userEntity = userRepository.findByUsername(username);
+        if (userEntity != null) {
+            if (encoder.matches(password, userEntity.getPassword())) {
+                return userEntity;
+            }
         }
-        ;
-        return true;
+        return null;
     }
 
     @Override
-    public UserEntity findUserByUsernameAndPassword(String username, String password) {
-        UserEntity foundUser = this.userRepository.findUserByUsername(username);
-        return matchUser(foundUser,password) ? foundUser : null;
-    }
-
-    private boolean matchUser(UserEntity foundUser, String password){
-        if(foundUser != null){
-            if (passwordEncoder.matches(password, foundUser.getPassword())){
-                return true;
-            } else return false;
-        } else return false;
+    public UserDetails loadUserByUsername(String s) throws UsernameNotFoundException {
+        return userRepository.findByUsername(s);
     }
 }

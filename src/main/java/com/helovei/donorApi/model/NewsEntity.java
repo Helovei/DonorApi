@@ -1,55 +1,42 @@
 package com.helovei.donorApi.model;
 
-import com.sun.istack.NotNull;
 import lombok.Getter;
 import lombok.Setter;
 
 import javax.persistence.*;
 
 @Entity
-@Table(name = "news")
+@Table(name = "t_news")
 public class NewsEntity {
-
-    public NewsEntity() {
-        this.counter = 0;
-    }
-
-    public NewsEntity(CategoryEntity categoryEntity, String title, String description, String image) {
-        this.categoryEntity = categoryEntity;
-        this.title = title;
-        this.description = description;
-        this.image = image;
-    }
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
-    @Getter
     private Long id;
 
-    @NotNull
-    @OneToOne
-    private CategoryEntity categoryEntity;
-
-    @NotNull
-    @Getter
     @Setter
+    @Getter
+    @Column(name = "title")
     private String title;
 
-    @NotNull
-    @Getter
     @Setter
+    @Getter
+    @Column(name = "description")
     private String description;
 
     @Getter
     @Setter
-    private String image;
+    @Column(name = "img_path")
+    private String imgPath;
 
-    @NotNull
     @Getter
     @Setter
-    private int counter;
+    @Column(name = "date_publication")
+    private String dateOfPublication;
 
-    public Long getId() {
-        return id;
-    }
+    @Getter
+    @Setter
+    @ManyToOne
+    @JoinColumn(name = "news_category_id")
+    private NewsCategory category;
+
 }

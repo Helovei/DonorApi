@@ -5,30 +5,17 @@ import lombok.Setter;
 
 import javax.persistence.*;
 
-@Entity
-@Table(name = "website")
-public class WebSiteEntity {
 
-    @Getter
+@Entity
+@Table(name = "t_news_category")
+public class NewsCategory {
+
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;
 
-    @Getter
     @Setter
-    private String category;
-
     @Getter
-    @Setter
+    @Column(name = "name")
     private String name;
-
-    @Getter
-    @Setter
-    private String url;
-
-    @Setter
-    @Getter
-    private String img;
-
-
 }
