@@ -18,8 +18,6 @@ public class NewsController {
     private final NewsService newsService;
     private final NewsCategoryService newsCategoryService;
 
-
-
     @Autowired
     public NewsController(NewsService newsService, NewsCategoryService newsCategoryService) {
         this.newsService = newsService;
@@ -29,6 +27,11 @@ public class NewsController {
     @GetMapping("/news")
     public List<NewsEntity> allNews() {
         return newsService.getAll();
+    }
+
+    @GetMapping("/news/getLatestNews")
+    public List<NewsEntity> getLatestNews(){
+        return newsService.getLastEntity();
     }
 
     @RequestMapping("/admin")

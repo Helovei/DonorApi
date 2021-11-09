@@ -32,4 +32,9 @@ public class NewsServiceImpl implements NewsService {
     public void delete(NewsEntity news) {
         repository.delete(news);
     }
+
+    @Override
+    public List<NewsEntity> getLastEntity() {
+        return repository.getLastEntity();
+    }
 }
