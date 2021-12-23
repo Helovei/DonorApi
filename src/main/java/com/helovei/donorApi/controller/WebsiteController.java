@@ -35,6 +35,12 @@ public class WebsiteController {
         return webSiteService.findByCategory(foundCategory);
     }
 
+    @GetMapping("/websites/hospitals")
+    public List<WebsiteEntity> getWebsitesByOther(){
+       WebsiteCategory category = webSiteCategoryService.findByName("OTHER");
+       return webSiteService.findByCategory(category);
+    }
+
     @PostMapping("/admin/website/addCategory")
     public HttpStatus addWebSites(@RequestBody WebsiteCategory category) {
         WebsiteCategory foundCategory = webSiteCategoryService.findByName(category.getName());
@@ -60,5 +66,6 @@ public class WebsiteController {
         }
         return HttpStatus.OK;
     }
+
 
 }
