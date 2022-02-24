@@ -1,0 +1,113 @@
+<svg width="263" height="206" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="xMidYMid meet">
+ <defs>
+  <path id="cAHJrlCga" d="m140.44,143.25c-1.04,-1.97 -1.81,-3.36 -2.85,-4.48c0,1.14 0,6.82 0,17.07c-0.51,0 -3.09,0 -7.73,0c0,-17.46 0,-27.16 0,-29.1c4.64,0 7.21,0 7.73,0c1.55,1.39 2.85,3.64 4.38,6.15c1.56,2.53 2.58,4.76 2.84,6.44c0.03,0 0.24,0 0.25,0c0.26,-1.4 1.04,-2.81 1.82,-4.19c0.77,-1.69 1.79,-3.08 2.83,-4.76c1.03,-1.41 2.05,-2.8 3.09,-3.64c0.51,0 3.08,0 7.73,0c0,1.94 0,11.64 0,29.1c-4.64,0 -7.22,0 -7.73,0c0,-10.25 0,-15.93 0,-17.07c-2.32,2.51 -4.13,6.71 -5.15,12.31c-0.18,0 -1.03,0 -2.59,0c-1.38,0 -2.16,0 -2.31,0c-0.52,-3.35 -1.29,-6.16 -2.31,-7.83z"/>
+  <path id="a2yqLRPnv" d="m140.44,143.25c-1.04,-1.97 -1.81,-3.36 -2.85,-4.48c0,1.14 0,6.82 0,17.07c-0.51,0 -3.09,0 -7.73,0c0,-17.46 0,-27.16 0,-29.1c4.64,0 7.21,0 7.73,0c1.55,1.39 2.85,3.64 4.38,6.15c1.56,2.53 2.58,4.76 2.84,6.44c0.03,0 0.24,0 0.25,0c0.26,-1.4 1.04,-2.81 1.82,-4.19c0.77,-1.69 1.79,-3.08 2.83,-4.76c1.03,-1.41 2.05,-2.8 3.09,-3.64c0.51,0 3.08,0 7.73,0c0,1.94 0,11.64 0,29.1c-4.64,0 -7.22,0 -7.73,0c0,-10.25 0,-15.93 0,-17.07c-2.32,2.51 -4.13,6.71 -5.15,12.31c-0.18,0 -1.03,0 -2.59,0c-1.38,0 -2.16,0 -2.31,0c-0.52,-3.35 -1.29,-6.16 -2.31,-7.83z"/>
+  <path id="bGptAKs75" d="m189.14,155.84l-7.73,0l0,-22.67l-8.51,0l0,22.67l-7.73,0l0,-29.1l23.97,0l0,29.1z"/>
+  <path id="aoanvJGha" d="m189.14,155.84l-7.73,0l0,-22.67l-8.51,0l0,22.67l-7.73,0l0,-29.1l23.97,0l0,29.1z"/>
+  <path id="d3xtESyQ2" d="m89.67,126.74l0,6.43l-13.65,0c0,9.9 0,15.41 0,16.51c2.31,0 3.6,0 3.86,0c3.35,0 4.89,-1.39 4.89,-3.92c0,-1.12 -0.26,-1.95 -1.02,-2.79c-0.78,-0.85 -1.81,-1.13 -3.35,-1.13c-0.78,0 -1.81,0 -2.85,0.28c0,-0.61 0,-5.53 0,-6.14c1.04,-0.28 2.59,-0.28 4.13,-0.56c2.33,0 4.38,0.28 5.93,1.1c1.8,0.85 3.09,1.97 3.87,3.65c0.76,1.39 1.28,3.36 1.28,5.31c0,4.2 -1.54,7.01 -4.13,8.11c-2.57,1.13 -5.14,1.97 -7.73,1.97c-0.82,0 -4.94,0 -12.36,0c0,-1.92 0,-11.53 0,-28.82l-0.25,0l21.38,0z"/>
+  <path id="ac8cFksiR" d="m89.67,126.74l0,6.43l-13.65,0c0,9.9 0,15.41 0,16.51c2.31,0 3.6,0 3.86,0c3.35,0 4.89,-1.39 4.89,-3.92c0,-1.12 -0.26,-1.95 -1.02,-2.79c-0.78,-0.85 -1.81,-1.13 -3.35,-1.13c-0.78,0 -1.81,0 -2.85,0.28c0,-0.61 0,-5.53 0,-6.14c1.04,-0.28 2.59,-0.28 4.13,-0.56c2.33,0 4.38,0.28 5.93,1.1c1.8,0.85 3.09,1.97 3.87,3.65c0.76,1.39 1.28,3.36 1.28,5.31c0,4.2 -1.54,7.01 -4.13,8.11c-2.57,1.13 -5.14,1.97 -7.73,1.97c-0.82,0 -4.94,0 -12.36,0c0,-1.92 0,-11.53 0,-28.82l-0.25,0l21.38,0z"/>
+  <path id="a6aoELclh9" d="m90.7,121.14c-2.16,0 -12.99,0 -32.47,0c0.86,-1.19 5.15,-7.16 12.89,-17.9c0,0 0,0 0,0c11.9,0 18.52,0 19.84,0c-0.26,5.87 -0.52,12.03 -0.26,17.9zm95.59,0c-39.89,0 -62.05,0 -66.47,0c-0.52,-5.87 -0.78,-11.75 -0.52,-17.9c10.71,0 37.51,0 80.4,0c-2.68,3.58 -12.07,16.11 -13.41,17.9z"/>
+  <path id="bK4H10i4e" d="m90.7,121.14c-2.16,0 -12.99,0 -32.47,0c0.86,-1.19 5.15,-7.16 12.89,-17.9c0,0 0,0 0,0c11.9,0 18.52,0 19.84,0c-0.26,5.87 -0.52,12.03 -0.26,17.9zm95.59,0c-39.89,0 -62.05,0 -66.47,0c-0.52,-5.87 -0.78,-11.75 -0.52,-17.9c10.71,0 37.51,0 80.4,0c-2.68,3.58 -12.07,16.11 -13.41,17.9z"/>
+  <path id="bMQSr6dOG" d="m257.67,200.89c-38.14,-15.95 -83.48,-24.91 -128.83,-25.47c-45.35,0.56 -90.96,9.52 -128.84,25.47c41.74,-5.04 85.8,-7.84 128.84,-8.4c43.02,0.56 87.08,3.36 128.83,8.4z"/>
+  <path id="etBKawT6c" d="m257.67,200.89c-38.14,-15.95 -83.48,-24.91 -128.83,-25.47c-45.35,0.56 -90.96,9.52 -128.84,25.47c41.74,-5.04 85.8,-7.84 128.84,-8.4c43.02,0.56 87.08,3.36 128.83,8.4z"/>
+  <path id="aE7yVQNpW" d="m135.8,63.22c-0.78,1.69 -5.94,10.36 -5.94,10.64c-0.26,0.85 2.33,17.07 3.35,24.06c2.17,0 19.48,0 21.65,0c-0.25,-14.27 -3.86,-38.61 -17.79,-41.97c-2.28,0 -20.63,0 -22.92,0c-14.44,8.96 -19.06,31.61 -20.36,40.57c-1.81,22.95 -1.03,37.21 9.27,58.76c4.54,0 20.41,0 22.68,0c-15.71,-33.86 -10.57,-92.6 10.06,-92.06z"/>
+  <path id="f2mO8GiVSW" d="m135.8,63.22c-0.78,1.69 -5.94,10.36 -5.94,10.64c-0.26,0.85 2.33,17.07 3.35,24.06c2.17,0 19.48,0 21.65,0c-0.25,-14.27 -3.86,-38.61 -17.79,-41.97c-2.28,0 -20.63,0 -22.92,0c-14.44,8.96 -19.06,31.61 -20.36,40.57c-1.81,22.95 -1.03,37.21 9.27,58.76c4.54,0 20.41,0 22.68,0c-15.71,-33.86 -10.57,-92.6 10.06,-92.06z"/>
+  <path id="docyDNzWR" d="m228.04,184.66c-11.34,-3.37 -23.2,-6.17 -34.79,-8.4c11.59,-14.83 18.81,-34.14 18.81,-54.84c0,-47.84 -37.11,-86.74 -82.96,-86.74c-45.87,0 -82.97,38.9 -82.97,86.74c0,20.7 6.95,40.01 18.81,54.84c-11.86,2.23 -23.45,5.03 -34.79,8.4c-10.82,-18.48 -17.02,-40.02 -17.02,-63.24c-0.5,-67.14 51.55,-121.42 115.71,-121.42c64.15,0 116.21,54.28 116.21,121.42c0,23.22 -6.19,44.76 -17.01,63.24z"/>
+  <path id="kOcTE1A6X" d="m228.04,184.66c-11.34,-3.37 -23.2,-6.17 -34.79,-8.4c11.59,-14.83 18.81,-34.14 18.81,-54.84c0,-47.84 -37.11,-86.74 -82.96,-86.74c-45.87,0 -82.97,38.9 -82.97,86.74c0,20.7 6.95,40.01 18.81,54.84c-11.86,2.23 -23.45,5.03 -34.79,8.4c-10.82,-18.48 -17.02,-40.02 -17.02,-63.24c-0.5,-67.14 51.55,-121.42 115.71,-121.42c64.15,0 116.21,54.28 116.21,121.42c0,23.22 -6.19,44.76 -17.01,63.24z"/>
+ </defs>
+ <g>
+  <title>background</title>
+  <rect fill="none" id="canvas_background" height="208" width="265" y="-1" x="-1"/>
+ </g>
+ <g>
+  <title>Layer 1</title>
+  <g stroke="null" id="svg_1">
+   <g stroke="null" id="svg_2">
+    <g stroke="null" id="svg_3">
+     <use x="0" y="0" transform="matrix(1,0,0,0.9452436566352844,0,0) " stroke="null" id="svg_4" fill="#70706f" xlink:href="#cAHJrlCga"/>
+     <g stroke="null" id="svg_5">
+      <use x="0" y="0" transform="matrix(1,0,0,0.9452436566352844,0,0) " stroke="#000000" id="svg_6" stroke-opacity="0" fill-opacity="0" xlink:href="#cAHJrlCga"/>
+     </g>
+    </g>
+    <g stroke="null" id="svg_7">
+     <use x="0" y="0" transform="matrix(1,0,0,0.9452436566352844,0,0) " stroke="null" id="svg_8" fill-opacity="0" fill="#000000" xlink:href="#a2yqLRPnv"/>
+     <g stroke="null" id="svg_9">
+      <use x="0" y="0" transform="matrix(1,0,0,0.9452436566352844,0,0) " stroke="#000000" id="svg_10" stroke-opacity="0" fill-opacity="0" xlink:href="#a2yqLRPnv"/>
+     </g>
+    </g>
+    <g stroke="null" id="svg_11">
+     <use x="0" y="0" transform="matrix(1,0,0,0.9452436566352844,0,0) " stroke="null" id="svg_12" fill="#70706f" xlink:href="#bGptAKs75"/>
+     <g stroke="null" id="svg_13">
+      <use x="0" y="0" transform="matrix(1,0,0,0.9452436566352844,0,0) " stroke="#000000" id="svg_14" stroke-opacity="0" fill-opacity="0" xlink:href="#bGptAKs75"/>
+     </g>
+    </g>
+    <g stroke="null" id="svg_15">
+     <use x="0" y="0" transform="matrix(1,0,0,0.9452436566352844,0,0) " stroke="null" id="svg_16" fill-opacity="0" fill="#000000" xlink:href="#aoanvJGha"/>
+     <g stroke="null" id="svg_17">
+      <use x="0" y="0" transform="matrix(1,0,0,0.9452436566352844,0,0) " stroke="#000000" id="svg_18" stroke-opacity="0" fill-opacity="0" xlink:href="#aoanvJGha"/>
+     </g>
+    </g>
+    <g stroke="null" id="svg_19">
+     <use x="0" y="0" transform="matrix(1,0,0,0.9452436566352844,0,0) " stroke="null" id="svg_20" fill="#70706f" xlink:href="#d3xtESyQ2"/>
+     <g stroke="null" id="svg_21">
+      <use x="0" y="0" transform="matrix(1,0,0,0.9452436566352844,0,0) " stroke="#000000" id="svg_22" stroke-opacity="0" fill-opacity="0" xlink:href="#d3xtESyQ2"/>
+     </g>
+    </g>
+    <g stroke="null" id="svg_23">
+     <use x="0" y="0" transform="matrix(1,0,0,0.9452436566352844,0,0) " stroke="null" id="svg_24" fill-opacity="0" fill="#000000" xlink:href="#ac8cFksiR"/>
+     <g stroke="null" id="svg_25">
+      <use x="0" y="0" transform="matrix(1,0,0,0.9452436566352844,0,0) " stroke="#000000" id="svg_26" stroke-opacity="0" fill-opacity="0" xlink:href="#ac8cFksiR"/>
+     </g>
+    </g>
+    <g stroke="null" id="svg_27">
+     <use x="0" y="0" transform="matrix(1,0,0,0.9452436566352844,0,0) " stroke="null" id="svg_28" fill="#e6007d" xlink:href="#a6aoELclh9"/>
+     <g stroke="null" id="svg_29">
+      <use x="0" y="0" transform="matrix(1,0,0,0.9452436566352844,0,0) " stroke="#000000" id="svg_30" stroke-opacity="0" fill-opacity="0" xlink:href="#a6aoELclh9"/>
+     </g>
+    </g>
+    <g stroke="null" id="svg_31">
+     <use x="0" y="0" transform="matrix(1,0,0,0.9452436566352844,0,0) " stroke="null" id="svg_32" fill-opacity="0" fill="#000000" xlink:href="#bK4H10i4e"/>
+     <g stroke="null" id="svg_33">
+      <use x="0" y="0" transform="matrix(1,0,0,0.9452436566352844,0,0) " stroke="#000000" id="svg_34" stroke-opacity="0" fill-opacity="0" xlink:href="#bK4H10i4e"/>
+     </g>
+    </g>
+    <g stroke="null" id="svg_35">
+     <use x="0" y="0" transform="matrix(1,0,0,0.9452436566352844,0,0) " stroke="null" id="svg_36" fill="#006fb7" xlink:href="#bMQSr6dOG"/>
+     <g stroke="null" id="svg_37">
+      <use x="0" y="0" transform="matrix(1,0,0,0.9452436566352844,0,0) " stroke="#000000" id="svg_38" stroke-opacity="0" fill-opacity="0" xlink:href="#bMQSr6dOG"/>
+     </g>
+    </g>
+    <g stroke="null" id="svg_39">
+     <use x="0" y="0" transform="matrix(1,0,0,0.9452436566352844,0,0) " stroke="null" id="svg_40" fill-opacity="0" fill="#000000" xlink:href="#etBKawT6c"/>
+     <g stroke="null" id="svg_41">
+      <use x="0" y="0" transform="matrix(1,0,0,0.9452436566352844,0,0) " stroke="#000000" id="svg_42" stroke-opacity="0" fill-opacity="0" xlink:href="#etBKawT6c"/>
+     </g>
+    </g>
+    <g stroke="null" id="svg_43">
+     <use x="0" y="0" transform="matrix(1,0,0,0.9452436566352844,0,0) " stroke="null" id="svg_44" fill="#e6007d" xlink:href="#aE7yVQNpW"/>
+     <g stroke="null" id="svg_45">
+      <use x="0" y="0" transform="matrix(1,0,0,0.9452436566352844,0,0) " stroke="#000000" id="svg_46" stroke-opacity="0" fill-opacity="0" xlink:href="#aE7yVQNpW"/>
+     </g>
+    </g>
+    <g stroke="null" id="svg_47">
+     <use x="0" y="0" transform="matrix(1,0,0,0.9452436566352844,0,0) " stroke="null" id="svg_48" fill-opacity="0" fill="#000000" xlink:href="#f2mO8GiVSW"/>
+     <g stroke="null" id="svg_49">
+      <use x="0" y="0" transform="matrix(1,0,0,0.9452436566352844,0,0) " stroke="#000000" id="svg_50" stroke-opacity="0" fill-opacity="0" xlink:href="#f2mO8GiVSW"/>
+     </g>
+    </g>
+    <g stroke="null" id="svg_51">
+     <use x="0" y="0" transform="matrix(1,0,0,0.9452436566352844,0,0) " stroke="null" id="svg_52" fill="#5da7a6" xlink:href="#docyDNzWR"/>
+     <g stroke="null" id="svg_53">
+      <use x="0" y="0" transform="matrix(1,0,0,0.9452436566352844,0,0) " stroke="#000000" id="svg_54" stroke-opacity="0" fill-opacity="0" xlink:href="#docyDNzWR"/>
+     </g>
+    </g>
+    <g stroke="null" id="svg_55">
+     <use x="0" y="0" transform="matrix(1,0,0,0.9452436566352844,0,0) " stroke="null" id="svg_56" fill-opacity="0" fill="#000000" xlink:href="#kOcTE1A6X"/>
+     <g stroke="null" id="svg_57">
+      <use x="0" y="0" transform="matrix(1,0,0,0.9452436566352844,0,0) " stroke="#000000" id="svg_58" stroke-opacity="0" fill-opacity="0" xlink:href="#kOcTE1A6X"/>
+     </g>
+    </g>
+   </g>
+  </g>
+ </g>
+</svg>

@@ -5,39 +5,34 @@ import com.helovei.donor.api.model.WebsiteEntity;
 import com.helovei.donor.api.repository.WebsiteRepository;
 import com.helovei.donor.api.service.WebSiteService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.domain.Sort;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
 
 @Service
-public class WebsiteServiceImpl implements WebSiteService {
-
-    private final WebsiteRepository repository;
+public class WebsiteServiceImpl extends AbstractServiceImpl<WebsiteEntity, WebsiteRepository>
+        implements WebSiteService {
 
     @Autowired
     public WebsiteServiceImpl(WebsiteRepository repository) {
-        this.repository = repository;
+        super(repository);
     }
 
     @Override
     public void save(WebsiteEntity entity) {
         if (entity != null) {
-            repository.save(entity);
+            super.repository.save(entity);
         }
     }
 
     @Override
-    public void delete(WebsiteEntity entity) {
-        repository.delete(entity);
-    }
-
-    @Override
     public List<WebsiteEntity> getAll() {
-        return repository.findAll();
+        return super.repository.findAll(Sort.by("id"));
     }
 
     @Override
     public List<WebsiteEntity> findByCategory(WebsiteCategory category) {
-        return repository.findByCategory(category);
+        return super.repository.findByCategory(category, Sort.by("id"));
     }
 }

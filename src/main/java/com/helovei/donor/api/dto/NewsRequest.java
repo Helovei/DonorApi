@@ -8,6 +8,7 @@ import lombok.Data;
 public class NewsRequest {
 
     private String title;
+    private String reduceDescription;
     private String description;
     private String imgPath;
     private String category;

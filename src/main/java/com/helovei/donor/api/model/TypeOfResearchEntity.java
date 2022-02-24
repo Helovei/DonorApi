@@ -1,15 +1,12 @@
 package com.helovei.donor.api.model;
 
-import lombok.Data;
 import lombok.Getter;
 import lombok.Setter;
 
 import javax.persistence.*;
 
-@Data
 @Entity
-@Table(name = "t_websites")
-public class WebsiteEntity {
+public class TypeOfResearchEntity {
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
@@ -21,16 +18,10 @@ public class WebsiteEntity {
     @Setter
     private String name;
 
+    @Getter
+    @Setter
     @ManyToOne
-    @JoinColumn(name = "category_id")
-    private WebsiteCategory category;
-
-    @Getter
-    @Setter
-    private String url;
-
-    @Getter
-    @Setter
-    private String imgPath;
+    @JoinColumn(name = "type_of_service_id")
+    private TypeOfServiceEntity typeOfService;
 
 }

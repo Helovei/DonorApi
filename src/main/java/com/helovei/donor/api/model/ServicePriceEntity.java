@@ -12,8 +12,9 @@ public class ServicePriceEntity {
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
+    @Getter
+    @Setter
     private Long id;
-
 
     @Getter
     @Setter
@@ -32,5 +33,10 @@ public class ServicePriceEntity {
     @Setter
     private float price;
 
+    @Getter
+    @Setter
+    @OneToOne
+    @JoinColumn(name = "type_of_research_id")
+    private TypeOfResearchEntity typeOfResearch;
 
 }

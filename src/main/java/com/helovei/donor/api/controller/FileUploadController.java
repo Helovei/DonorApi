@@ -9,6 +9,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.core.io.Resource;
 import org.springframework.http.HttpHeaders;
 import org.springframework.http.HttpStatus;
+import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
@@ -22,12 +23,10 @@ import javax.servlet.ServletContext;
 public class FileUploadController {
 
     private final StorageService storageService;
-    private final ServletContext servletContext;
 
     @Autowired
     public FileUploadController(StorageService storageService, ServletContext servletContext) {
         this.storageService = storageService;
-        this.servletContext = servletContext;
     }
 
     //get all files
@@ -43,10 +42,12 @@ public class FileUploadController {
     //get file
     @GetMapping("/files/{filename:.+}")
     @ResponseBody
-    public ResponseEntity<Path> serveFile(@PathVariable String filename) {
+    public ResponseEntity<Path> getFile(@PathVariable String filename) {
         Path file = storageService.load(filename);
-        return ResponseEntity.ok().header(HttpHeaders.CONTENT_DISPOSITION,
-                "attachment; filename=\"" + file.toFile().getName() + "\"").body(file);
+        return ResponseEntity.ok()
+                .header(HttpHeaders.CONTENT_DISPOSITION,
+                "attachment; filename=\"" + file.toFile().getName() + "\"")
+                .body(file);
     }
 
 
@@ -57,6 +58,17 @@ public class FileUploadController {
         HttpHeaders headers = new HttpHeaders();
         Resource resource = storageService.loadAsResource(filename);
         return new ResponseEntity<>(resource, headers, HttpStatus.OK);
+    }
+
+    // get svg
+    @GetMapping("/svg/{filename:.+}")
+    @ResponseBody
+    public ResponseEntity<Resource> getSvgAsResource(@PathVariable String filename) {
+        Resource resource = storageService.loadAsResource(filename);
+        return ResponseEntity.ok()
+                .header(HttpHeaders.ACCESS_CONTROL_ALLOW_HEADERS)
+                .contentType(MediaType.valueOf("image/svg+xml"))
+                .body(resource);
     }
 
     //save file

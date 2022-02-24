@@ -13,17 +13,15 @@ import org.springframework.stereotype.Service;
 import java.util.List;
 
 @Service
-public class UserServiceImpl implements UserService {
+public class UserServiceImpl extends AbstractServiceImpl<UserEntity, UserRepository>
+        implements UserService {
 
-    private final UserRepository userRepository;
     private final RoleService roleRepository;
     private final PasswordEncoder encoder;
 
-    private String secureWord;
-
     @Autowired
     public UserServiceImpl(UserRepository userRepository, RoleService roleRepository, PasswordEncoder encoder) {
-        this.userRepository = userRepository;
+        super(userRepository);
         this.roleRepository = roleRepository;
         this.encoder = encoder;
     }
@@ -33,21 +31,11 @@ public class UserServiceImpl implements UserService {
         RoleEntity userRole = roleRepository.findByName("ROLE_USER");
         entity.setRole(userRole);
         entity.setPassword(encoder.encode(entity.getPassword()));
-        userRepository.save(entity);
-    }
-
-    @Override
-    public List<UserEntity> getAll() {
-        return userRepository.findAll();
-    }
-
-    @Override
-    public void delete(UserEntity entity) {
-        userRepository.delete(entity);
+        super.repository.save(entity);
     }
 
     public UserEntity findByLoginAndPassword(String username, String password) {
-        UserEntity userEntity = userRepository.findByUsername(username);
+        UserEntity userEntity = super.repository.findByUsername(username);
         if (userEntity != null) {
             if (encoder.matches(password, userEntity.getPassword())) {
                 return userEntity;
@@ -58,6 +46,6 @@ public class UserServiceImpl implements UserService {
 
     @Override
     public UserDetails loadUserByUsername(String s) throws UsernameNotFoundException {
-        return userRepository.findByUsername(s);
+        return super.repository.findByUsername(s);
     }
 }

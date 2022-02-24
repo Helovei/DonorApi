@@ -4,6 +4,6 @@ import com.helovei.donor.api.model.WebsiteCategory;
 
 public interface WebSiteCategoryService extends AbstractCrudService<WebsiteCategory> {
 
-    WebsiteCategory findByName(String name);
+    WebsiteCategory findById(Long id);
 
 }

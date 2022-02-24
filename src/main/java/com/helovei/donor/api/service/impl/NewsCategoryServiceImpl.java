@@ -9,32 +9,21 @@ import org.springframework.stereotype.Service;
 import java.util.List;
 
 @Service
-public class NewsCategoryServiceImpl implements NewsCategoryService {
-
-    private final NewsCategoryRepository repository;
+public class NewsCategoryServiceImpl extends AbstractServiceImpl<NewsCategory, NewsCategoryRepository>
+        implements NewsCategoryService {
 
     @Autowired
     public NewsCategoryServiceImpl(NewsCategoryRepository repository) {
-        this.repository = repository;
-    }
-
-    @Override
-    public void save(NewsCategory newsCategory) {
-        repository.save(newsCategory);
-    }
-
-    @Override
-    public List<NewsCategory> getAll() {
-        return repository.findAll();
-    }
-
-    @Override
-    public void delete(NewsCategory newsCategory) {
-        repository.delete(newsCategory);
+        super(repository);
     }
 
     @Override
     public NewsCategory findByName(String name) {
         return repository.findByName(name);
+    }
+
+    @Override
+    public NewsCategory findById(Long id) {
+        return repository.findNewsCategoryById(id);
     }
 }

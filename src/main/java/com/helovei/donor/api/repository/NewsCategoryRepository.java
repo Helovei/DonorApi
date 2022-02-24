@@ -7,4 +7,5 @@ import org.springframework.stereotype.Repository;
 @Repository
 public interface NewsCategoryRepository extends JpaRepository<NewsCategory, Long> {
     NewsCategory findByName(String name);
+    NewsCategory findNewsCategoryById(Long id);
 }

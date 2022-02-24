@@ -25,6 +25,11 @@ public class NewsEntity {
 
     @Setter
     @Getter
+    @Column(name = "reduce_description", columnDefinition="TEXT")
+    private String reduceDescription;
+
+    @Setter
+    @Getter
     @Column(name = "description", columnDefinition="TEXT")
     private String description;
 

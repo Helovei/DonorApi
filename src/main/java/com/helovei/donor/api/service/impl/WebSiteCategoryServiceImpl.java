@@ -6,37 +6,24 @@ import com.helovei.donor.api.service.WebSiteCategoryService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import java.util.List;
-
 @Service
-public class WebSiteCategoryServiceImpl implements WebSiteCategoryService {
-
-    private final WebSiteCategoryRepository repository;
+public class WebSiteCategoryServiceImpl extends AbstractServiceImpl<WebsiteCategory, WebSiteCategoryRepository>
+        implements WebSiteCategoryService {
 
     @Autowired
     public WebSiteCategoryServiceImpl(WebSiteCategoryRepository repository) {
-        this.repository = repository;
+        super(repository);
     }
 
     @Override
     public void save(WebsiteCategory websiteCategory) {
         if (websiteCategory != null){
-            repository.save(websiteCategory);
+            super.repository.save(websiteCategory);
         }
     }
 
     @Override
-    public List<WebsiteCategory> getAll() {
-        return repository.findAll();
-    }
-
-    @Override
-    public void delete(WebsiteCategory websiteCategory) {
-        repository.delete(websiteCategory);
-    }
-
-    @Override
-    public WebsiteCategory findByName(String name) {
-        return repository.findByName(name);
+    public WebsiteCategory findById(Long id) {
+        return super.repository.findWebsiteCategoriesById(id);
     }
 }

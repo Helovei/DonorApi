@@ -10,4 +10,6 @@ public interface WebSiteService extends AbstractCrudService<WebsiteEntity>{
     List<WebsiteEntity> findByCategory(WebsiteCategory category);
 
 
+
+
 }

@@ -7,5 +7,6 @@ import org.springframework.stereotype.Repository;
 @Repository
 public interface WebSiteCategoryRepository extends JpaRepository<WebsiteCategory, Long> {
 
-    WebsiteCategory findByName(String name);
+    WebsiteCategory findWebsiteCategoriesById(Long id);
+
 }

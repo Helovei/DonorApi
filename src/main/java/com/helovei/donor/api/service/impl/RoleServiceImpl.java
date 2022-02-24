@@ -6,35 +6,20 @@ import com.helovei.donor.api.service.RoleService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import javax.management.relation.Role;
 import java.util.List;
 
 @Service
-public class RoleServiceImpl implements RoleService {
-
-    private final RoleRepository repository;
+public class RoleServiceImpl extends AbstractServiceImpl<RoleEntity, RoleRepository>
+        implements RoleService {
 
     @Autowired
     public RoleServiceImpl(RoleRepository repository) {
-        this.repository = repository;
-    }
-
-    @Override
-    public void save(RoleEntity roleEntity) {
-        repository.save(roleEntity);
-    }
-
-    @Override
-    public List<RoleEntity> getAll() {
-        return repository.findAll();
-    }
-
-    @Override
-    public void delete(RoleEntity roleEntity) {
-        repository.delete(roleEntity);
+        super(repository);
     }
 
     @Override
     public RoleEntity findByName(String name) {
-        return repository.findByName(name);
+        return super.repository.findByName(name);
     }
 }

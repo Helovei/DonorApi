@@ -11,6 +11,8 @@ public class WebsiteCategory {
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
+    @Getter
+    @Setter
     private Long id;
 
     @Setter
