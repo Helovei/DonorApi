@@ -1,7 +1,10 @@
 package com.helovei.donor.api.service.impl;
 
 import com.helovei.donor.api.service.AbstractCrudService;
+import org.springframework.context.annotation.Bean;
+import org.springframework.data.domain.Sort;
 import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.stereotype.Component;
 
 import java.util.List;
 
@@ -20,7 +23,7 @@ public abstract class AbstractServiceImpl<T,E extends JpaRepository<T, Long>> im
 
     @Override
     public List<T> getAll() {
-        return repository.findAll();
+        return repository.findAll(Sort.by("id"));
     }
 
     @Override

@@ -1,25 +1,21 @@
-package com.helovei.donor.api.model;
+package com.helovei.donor.api.model.services;
 
 
-import lombok.Getter;
-import lombok.Setter;
+import lombok.Data;
 
 import javax.persistence.*;
 import java.util.List;
 
 @Entity
-public class TypeOfServiceEntity {
+@Table(name = "t_procedure_category")
+@Data
+public class ProcedureCategory {
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
-    @Getter
-    @Setter
     private Long id;
 
-    @Getter
-    @Setter
     private String name;
-
 
 
 }

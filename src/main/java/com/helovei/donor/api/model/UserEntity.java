@@ -1,6 +1,7 @@
 package com.helovei.donor.api.model;
 
 
+import lombok.Data;
 import lombok.Getter;
 import lombok.Setter;
 import org.springframework.security.core.GrantedAuthority;
@@ -13,6 +14,7 @@ import java.util.Collections;
 
 @Entity
 @Table(name = "t_user")
+@Data
 public class UserEntity implements UserDetails {
 
     @Id
@@ -20,35 +22,20 @@ public class UserEntity implements UserDetails {
     private Long id;
 
     @Column(name = "username")
-    @Setter
     private String username;
 
     @Column(name = "password")
-    @Setter
     private String password;
 
     @Column(name = "email")
-    @Getter
-    @Setter
     private String email;
 
     @ManyToOne
-    @Setter
     private RoleEntity role;
 
     @Override
     public Collection<? extends GrantedAuthority> getAuthorities() {
         return Collections.singletonList(role);
-    }
-
-    @Override
-    public String getPassword() {
-        return password;
-    }
-
-    @Override
-    public String getUsername() {
-        return username;
     }
 
     @Override

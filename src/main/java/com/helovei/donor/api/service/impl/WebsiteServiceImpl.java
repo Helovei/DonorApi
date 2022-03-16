@@ -27,11 +27,6 @@ public class WebsiteServiceImpl extends AbstractServiceImpl<WebsiteEntity, Websi
     }
 
     @Override
-    public List<WebsiteEntity> getAll() {
-        return super.repository.findAll(Sort.by("id"));
-    }
-
-    @Override
     public List<WebsiteEntity> findByCategory(WebsiteCategory category) {
         return super.repository.findByCategory(category, Sort.by("id"));
     }
